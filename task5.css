@@ -1,0 +1,105 @@
+*{
+	font-family: "Microsoft Yahei";
+}
+
+#form-gra-time{
+	width: 1200px;
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+#gra-time{
+	float: left;
+	margin-left: 100px;
+}
+
+#select-city{
+	float: left;
+	margin-left: 100px;
+}
+
+#city-select{
+	width: 110px;
+	margin-top: 13px;
+	padding: 0 30px;
+	font-size: .75rem;
+	letter-spacing: 10px;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+label{
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+
+label span{
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #16324a;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+label input{
+	display: none;
+}
+
+#aqi-chart-wrap{
+	position: relative;
+	width: 1200px;
+	height: 600px;
+	margin: 50px auto;
+	box-shadow: 0 0 5px #999999;
+	border-radius: 15px;
+}
+
+.selected{
+	background-color: #16324a;
+	color: white;
+}
+
+@keyframes heightInit{
+	from{
+		bottom: -300px;
+	}
+	to{
+		bottom: 0px;
+	}
+}
+
+.aqi-bar{
+	position: absolute;
+	bottom: 0;
+	cursor: pointer;
+	animation: heightInit .5s ease-in-out;
+}
+
+.aqi-hint{
+	position: absolute;
+	display: none;
+	width: 120px;
+	z-index: 999;
+	border: 1px solid #16324a;
+	background-color: white;
+	font-size: .75rem;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #dddddd;
+}
+
+.show + div{
+	display: block;
+}
+
+.title{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 10px;
+}
